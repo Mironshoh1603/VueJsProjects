@@ -19,10 +19,10 @@
     <section id="events">
       <h2>Events in Action</h2>
       <button v-on:click="add(10)">Add 10</button>
-      <button v-on:click="reduce(5)">Subtract 5< /button>
-      <p>Result: {{ counter }}</p>
-      <input type="text" v-model="name" />
-      <p>Your Name: {{ name }}</p>
+      <button v-on:click="reduce(5)">Subtract 5</button>
+      <p>Result: {{ renderCouter }}</p>
+      <input type="text" v-model="name" v-on:input="outputFullname" />
+      <p>Your Name: {{ name() }}</p>
     </section>
   </body>
 </html>
